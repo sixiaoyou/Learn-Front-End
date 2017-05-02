@@ -2,28 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>iRock - The Virtual Pet Rock</title>
+    <title>Yo-Gi-Oh</title>
     <script type="text/javascript">
         function greetUser(){
-            alert('Hello , I am your pet rock.');
+            alert('欢迎来到游戏王的世界');
         }
         function resizeRock(){
             document.getElementById("rockImg").style.height=(document.body.clientHeight-100)*0.9;
         }
-
         function touchRock(){
-            var userName = prompt("What is your name?,Enter your name here:")
-            if(userName){
-                alert("It is good to meet you, "+userName+".");
-                document.getElementById("rockImg").src="rock_happy.jpg";
+            var userName = prompt("输入数字1~6，猜猜你是游戏王系列中的哪位主角？")
+            if(userName==1){
+                alert("原来你是王样啊！！");
+                document.getElementById("rockImg").src="xi.jpg";
+            }  else if(userName==2){
+                alert("原来你是十代啊！！");
+                document.getElementById("rockImg").src="dai.jpg";
+            } else if(userName==3){
+                alert("原来你是蟹哥啊！！");
+                document.getElementById("rockImg").src="xing.jpg";
+            }else if(userName==4){
+                alert("原来你是游马啊！！");
+                document.getElementById("rockImg").src="ma.jpg";
+            }else if(userName==5){
+                alert("原来你是游矢啊！！");
+                document.getElementById("rockImg").src="shi.jpg";
+            }else if(userName==6){
+                alert("原来你是游作啊！！");
+                document.getElementById("rockImg").src="zuo.jpeg";
             }
         }
     </script>
 </head>
 <body onload="resizeRock();greetUser();"onresize="resizeRock();" >
-    <div>
-        <div style = "margin-top: 100px;text-align:center"/>
-            <img id="rockImg" src="rock.png" alt="iRock" style="cursor:pointer"
+<p align="center"><embed src='http://player.youku.com/player.php/sid/XMjMzMzYyMTY4/v.swf?isAutoPlay=true' allowFullScreen='true' quality='high' width='400' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+<div>
+        <div style = "margin-top: 0px;text-align:center"/>
+            <img id="rockImg" src="family.jpeg" alt="iRock" style="cursor:pointer"
             onclick="touchRock();"/>
     </div>
 </body>
