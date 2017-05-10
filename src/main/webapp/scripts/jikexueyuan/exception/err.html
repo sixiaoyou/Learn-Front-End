@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+<form>
+    <input id="txt" type="text">
+    <input id="btn" type="button" onclick="demo2()" value="按钮">
+</form>
+<script>
+    var str = "hello";
+    function demo1() {
+        try {
+            alert(str);
+        } catch (err) {
+            alert(err)
+        }
+    }
+    function demo2() {
+        try {
+            var e = document.getElementById("txt").value;
+            if (e == "") {
+                throw("第一个用户输入异常");
+            }
+        } catch (err) {
+            alert(err);
+        }
+    }
+</script>
+</body>
+</html>

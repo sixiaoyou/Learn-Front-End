@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+<script>
+    var str = "Hello World";
+    var str1 = "hello,jike,xueyuan";
+//    length
+    document.write("字符串长度: " + str.length);
+    document.write("<br>");
+
+//    indexOf
+    document.write("test1: " + str.indexOf("World"));
+    document.write("<br>");
+    document.write("test2: " + str.indexOf("Woold"));
+    document.write("<br>");
+
+//    match
+    document.write(str.match("World"));
+    document.write("<br>");
+
+//    replace
+    document.write(str.replace("World","You"));
+    document.write("<br>");
+
+//    toUpperCase|toLowerCase
+    document.write(str.toLowerCase());
+    document.write("<br>");
+
+//    split
+    var s = str1.split(",");
+    document.write(s[2]);
+
+</script>
+
+</body>
+</html>

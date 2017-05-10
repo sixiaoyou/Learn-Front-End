@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--创建对象-->
+<script>
+//    people = new Object();
+//    people.name = "you";
+//    people.age=23;
+//    document.write("name: "+people.name+",age: "+people.age);
+//    people = {name:"you",age:30};
+//    document.write("name: "+people.name+",age: "+people.age);
+    function people(name,age){
+        this._name = name;
+        this._age = age;
+    }
+    son = new people("you",23);
+    document.write("name: "+son._name+",age: "+son._age);
+</script>
+
+</body>
+</html>
